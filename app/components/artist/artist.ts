@@ -1,6 +1,6 @@
 /// <reference path="../../../typings/_custom.d.ts" />
 
-import { Component, View, coreDirectives, NgIf } from 'angular2/angular2';
+import { Component, View, NgIf } from 'angular2/angular2';
 import { RouterLink, RouteParams } from 'angular2/router';
 import { Spotify } from '../../services/spotify';
 import { status, json } from '../../utils/fetch'
@@ -10,7 +10,7 @@ import { status, json } from '../../utils/fetch'
 	viewInjector: [Spotify]
 })
 @View({
-	directives: [coreDirectives, NgIf],
+	directives: [NgIf],
 	template: `
 		<section *ng-if=artist>
 			<h3>{{artist.name}}</h3>
