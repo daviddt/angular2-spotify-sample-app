@@ -36,7 +36,11 @@ var Artist = (function () {
             viewInjector: [spotify_1.Spotify]
         }),
         angular2_1.View({
+<<<<<<< HEAD
             directives: [angular2_1.NgIf],
+=======
+            directives: [angular2_1.coreDirectives, angular2_1.NgIf],
+>>>>>>> 3ed11da30a141ea24db69354db15bfa9221e355b
             template: "\n\t\t<section *ng-if=artist>\n\t\t\t<h3>{{artist.name}}</h3>\n\t\t\t<img src=\"{{image}}\">\n\t\t</section>\n\t"
         }), 
         __metadata('design:paramtypes', [spotify_1.Spotify, router_1.RouteParams])
